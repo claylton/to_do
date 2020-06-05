@@ -1,2 +1,3 @@
 # To-Do-List
- Uma Lista de tárefas Básicas usando usando Flutter
+ *Uma Lista de tarefas básica usando usando Flutter
+*Linguagem : Dart
