@@ -1,3 +1,6 @@
-# To-Do-List
- *Uma Lista de tarefas básica usando usando Flutter
-*Linguagem : Dart
+# To Do List
+### Descrição:
+###### Uma Lista de tarefas básica usando usando Flutter
+###### Nível: Iniciante
+###### Linguagem : Dart
+###### Arquitetura Usada: Nenhuma
