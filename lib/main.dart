@@ -23,6 +23,17 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+//O Scaffold representa uma página é o esqueleto da página
+//Dentro dele temos os widgets
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Todo List"),
+      ),
+      body: Container(
+        child: Center(
+          child: Text("data"),
+        ),
+      ),
+    );
   }
 }
