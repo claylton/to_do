@@ -51,11 +51,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("Todo List"),
       ),
-      //ListView.builder renderiza a lista sob demanda itens em tela
+//ListView.builder renderiza a lista sob demanda itens em tela
       body: ListView.builder(
         //acessar a variável items criado na classe pai
         itemCount: widget.items.length,
-        //Função para desenhar os itens em tela
+//Função para desenhar os itens em tela
         itemBuilder: (BuildContext context, int index) {
           final item = widget.items[index];
 
@@ -63,7 +63,13 @@ class _HomePageState extends State<HomePage> {
             title: Text(item.title),
             key: Key(item.title),
             value: item.done,
-            onChanged: (value) {},
+            onChanged: (value) {
+//setState só existe dentro de um Statefull widget
+//Ele é o responsável em "falar" pro flutter que determinado item mudou e precisa ser alterado
+              setState(() {
+                item.done = value;
+              });
+            },
           );
         },
       ),
