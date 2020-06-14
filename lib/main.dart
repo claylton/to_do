@@ -46,6 +46,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  _HomePageState() {
+    loadData();
+  }
   var novaTarefaController = TextEditingController();
 
 //Método para adicionar um item
@@ -60,6 +63,7 @@ class _HomePageState extends State<HomePage> {
           done: false,
         ),
       );
+      saveData();
 //limpa o item do controller
       novaTarefaController.clear();
 //outra forma de limpar o item
@@ -69,6 +73,7 @@ class _HomePageState extends State<HomePage> {
 
   void remove(int index) {
     widget.items.removeAt(index);
+    saveData();
   }
 
 //Ler informações e retornar alguma coisa
@@ -92,14 +97,19 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  _HomePageState() {
-    loadData();
+  saveData() async {
+    var prefs = await SharedPreferences.getInstance();
+    //Transforma o Objeto item em um JSON e salva as informações no SharedPreferences
+    await prefs.setString('data', jsonEncode(widget.items));
   }
 
   @override
 //Classe filho:
   Widget build(BuildContext context) {
 //Os métodos criados abaixo do build serão recriados a cada execução fzd a lista ser recriada a cada compilação
+    // setState(() {
+    //   loadData();
+    // });
     return Scaffold(
       appBar: AppBar(
         title: TextFormField(
@@ -134,7 +144,9 @@ class _HomePageState extends State<HomePage> {
               value: item.done,
               onChanged: (value) {
                 setState(() {
+                  print(value);
                   item.done = value;
+                  saveData();
                 });
               },
             ),
