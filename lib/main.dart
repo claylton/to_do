@@ -45,6 +45,26 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var novaTarefaController = TextEditingController();
+
+//Método para adicionar um item
+  void add() {
+//Se o texto for vazio retorna sem entrar no setState
+    if (novaTarefaController.text.isEmpty) return;
+    setState(() {
+//adiciona um item
+      widget.items.add(
+        new Item(
+          title: novaTarefaController.text,
+          done: false,
+        ),
+      );
+//limpa o item do controller
+      novaTarefaController.clear();
+//outra forma de limpar o item
+      //novaTarefaController.text = "";
+    });
+  }
+
   @override
 //Classe filho:
   Widget build(BuildContext context) {
@@ -84,6 +104,12 @@ class _HomePageState extends State<HomePage> {
             },
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+//Aqui estou passando a função, não chamando ela apor isso não tem os () depoi do add
+        onPressed: add,
+        child: Icon(Icons.add),
+        backgroundColor: Colors.pink,
       ),
     );
   }
