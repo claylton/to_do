@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'models/item.dart';
 
 void main() {
@@ -23,17 +22,18 @@ class MyApp extends StatelessWidget {
 }
 
 //No Stateful o estado da aplicação muda constantemente
+//Classe pai:
 class HomePage extends StatefulWidget {
-  //Classe pai -> Os métodos criados abaixo só serão chamados uma vez
+//Os métodos criados abaixo só serão chamados uma vez
 
-  //Instanciando o método item -> É um Tipo Lista Item
+//Instanciando o método item -> É um Tipo Lista Item
   var items = new List<Item>();
 
-  //Construtor
+//Construtor
   HomePage() {
-    //inicializando a lista de items
+//inicializando a lista de items
     items = [];
-    //Adicionando items
+//Adicionando items
     items.add(Item(title: "Item 1", done: false));
     items.add(Item(title: "Item 2", done: true));
     items.add(Item(title: "Item 3", done: false));
@@ -44,12 +44,27 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  var novaTarefaController = TextEditingController();
   @override
+//Classe filho:
   Widget build(BuildContext context) {
-//Classe filho -> métodos criados abaixo do build serão recriados a cada execução fzd a lista ser recriada
+//Os métodos criados abaixo do build serão recriados a cada execução fzd a lista ser recriada a cada compilação
     return Scaffold(
       appBar: AppBar(
-        title: Text("Todo List"),
+        title: TextFormField(
+          controller: novaTarefaController,
+          keyboardType: TextInputType.text,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 18,
+          ),
+          decoration: InputDecoration(
+            labelText: "Digite aqui uma nova tarefa",
+            labelStyle: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ),
       ),
 //ListView.builder renderiza a lista sob demanda itens em tela
       body: ListView.builder(
@@ -64,7 +79,6 @@ class _HomePageState extends State<HomePage> {
             value: item.done,
             onChanged: (value) {
               setState(() {
-                print(value);
                 item.done = value;
               });
             },
