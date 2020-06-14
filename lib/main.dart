@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'models/item.dart';
@@ -71,13 +72,28 @@ class _HomePageState extends State<HomePage> {
   }
 
 //Ler informações e retornar alguma coisa
-  Future load() async {
+  Future loadData() async {
 //Aguarde até o método SharedPreferences.getInstance() pronto
     var prefs = await SharedPreferences.getInstance();
-//Pegar as informações
+//Pegar as informações dentro do SharedfPreferences no formato de String
     var data = prefs.getString('data');
 
-    if (data != null) {}
+    if (data != null) {
+//transformar a String 'data' em JSON no formato Iterable(Uma coluna onde podemos percorrer ela)
+      Iterable decode = jsonDecode(data);
+//Pegando uma lista de itens do shared preferences:
+//decode.map ((e) => = percorre todos os itens e chama uma função
+//Item.fromJson(e)) = Converte o JSON para um item (title e done)
+//toList() = Transforma os itens em uma lista
+      List<Item> result = decode.map((e) => Item.fromJson(e)).toList();
+      setState(() {
+        widget.items = result;
+      });
+    }
+  }
+
+  _HomePageState() {
+    loadData();
   }
 
   @override

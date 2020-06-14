@@ -11,7 +11,7 @@ class Item {
 
 //Item irá receber um Map String, dynamic ou seja vai receber um Objeto(JSON) do tipo dynamic no formato de String
   Item.fromJson(Map<String, dynamic> json) {
-//Aqui nós iremos percorrer o JSON e pegar a propriedades title e done e passar para suas respectivas variáveis
+//Aqui nós iremos percorrer o JSON e pegar a propriedades title e done e passar para suas respectivas variáveis criando um item
     title = json['title'];
     done = json['done'];
   }
