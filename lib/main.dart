@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'models/item.dart';
 
 void main() {
@@ -33,10 +34,10 @@ class HomePage extends StatefulWidget {
   HomePage() {
 //inicializando a lista de items
     items = [];
-//Adicionando items
-    items.add(Item(title: "Item 1", done: false));
-    items.add(Item(title: "Item 2", done: true));
-    items.add(Item(title: "Item 3", done: false));
+//Adicionando items no sistema
+    // items.add(Item(title: "Item 1", done: false));
+    // items.add(Item(title: "Item 2", done: true));
+    // items.add(Item(title: "Item 3", done: false));
   }
 
   @override
@@ -67,6 +68,16 @@ class _HomePageState extends State<HomePage> {
 
   void remove(int index) {
     widget.items.removeAt(index);
+  }
+
+//Ler informações e retornar alguma coisa
+  Future load() async {
+//Aguarde até o método SharedPreferences.getInstance() pronto
+    var prefs = await SharedPreferences.getInstance();
+//Pegar as informações
+    var data = prefs.getString('data');
+
+    if (data != null) {}
   }
 
   @override
