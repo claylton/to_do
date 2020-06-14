@@ -1,2 +1,3 @@
 * text=auto
 windows/* linguist-vendored
+windows/runner/* linguist-vendored
