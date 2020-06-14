@@ -1,5 +1,4 @@
 //Classe item onde temos o nome do item e se ele foi feito ou não
-
 class Item {
 //Variáveis
   String title;

@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//Stateful pos o estado da aplicação muda constantemente
+//No Stateful o estado da aplicação muda constantemente
 class HomePage extends StatefulWidget {
   //Classe pai -> Os métodos criados abaixo só serão chamados uma vez
 
-  //Instanciando o método item -> É Tipo Lista Item
+  //Instanciando o método item -> É um Tipo Lista Item
   var items = new List<Item>();
 
   //Construtor
@@ -46,27 +46,25 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-//Classe filho -> métodos criados abaixo do build serão recriados a cada execução fzd o a lista ser recriada
+//Classe filho -> métodos criados abaixo do build serão recriados a cada execução fzd a lista ser recriada
     return Scaffold(
       appBar: AppBar(
         title: Text("Todo List"),
       ),
 //ListView.builder renderiza a lista sob demanda itens em tela
       body: ListView.builder(
-        //acessar a variável items criado na classe pai
+//acessar a variável items criado na classe pai
         itemCount: widget.items.length,
 //Função para desenhar os itens em tela
         itemBuilder: (BuildContext context, int index) {
           final item = widget.items[index];
-
           return CheckboxListTile(
             title: Text(item.title),
             key: Key(item.title),
             value: item.done,
             onChanged: (value) {
-//setState só existe dentro de um Statefull widget
-//Ele é o responsável em "falar" pro flutter que determinado item mudou e precisa ser alterado
               setState(() {
+                print(value);
                 item.done = value;
               });
             },
