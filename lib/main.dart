@@ -113,15 +113,28 @@ class _HomePageState extends State<HomePage> {
               value: item.done,
               onChanged: (value) {
                 setState(() {
-                  print(value);
                   item.done = value;
                   saveData();
                 });
+                if (value) {
+                  Scaffold.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                          "Parabéns por ter concluido a tarefa: \n'${item.title}' !!"),
+                    ),
+                  );
+                }
               },
+              activeColor: Colors.pinkAccent,
             ),
             direction: DismissDirection.endToStart,
             onDismissed: (direction) {
               remove(index);
+              Scaffold.of(context).showSnackBar(
+                SnackBar(
+                  content: Text("A tarefa '${item.title}' foi removida"),
+                ),
+              );
             },
           );
         },
