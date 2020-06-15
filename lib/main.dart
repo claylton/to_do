@@ -11,11 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //Retira o nome Debug da tela padrão fo Flutter
       title: 'Todo App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.black,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
@@ -26,7 +25,6 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatefulWidget {
   var items = new List<Item>();
 
-//Construtor
   HomePage() {
     items = [];
   }
@@ -105,6 +103,10 @@ class _HomePageState extends State<HomePage> {
             key: Key(item.title),
             background: Container(
               color: Colors.pinkAccent,
+              child: Align(
+                alignment: Alignment(0.9, 0),
+                child: Icon(Icons.delete),
+              ),
             ),
             child: CheckboxListTile(
               title: Text(item.title),
@@ -117,6 +119,7 @@ class _HomePageState extends State<HomePage> {
                 });
               },
             ),
+            direction: DismissDirection.endToStart,
             onDismissed: (direction) {
               remove(index);
             },
