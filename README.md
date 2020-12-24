@@ -6,6 +6,3 @@
   📝 Lista de tarefas básica usando o Flutter!!
 </h3>
 
-
-### Gif da aplicação
-![Git da aplicação](https://github.com/claylton/to_do/blob/master/ezgif.com-video-to-gif.gif)
