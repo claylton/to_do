@@ -16,7 +16,7 @@
 </div>
 
 <h4 align="center"> 
-	🚧  To do 📋 Concluído 🚀 🚧
+	🚧  To do 📋 Concluído ✅ 🚧
 </h4>
 
 <p align="center">
