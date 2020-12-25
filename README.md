@@ -26,7 +26,7 @@
  <a href="#executar">Como executar a aplicação</a> • 
  <a href="#tecnologias">Tecnologias</a> •
  <a href="#autor">Autor</a> •
- <a href="#licenca">📝 Licença</a>
+ <a href="#licenca">Licença</a>
 </p>
 
 ## 💻 Sobre a aplicação
@@ -80,9 +80,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <br />
  <sub><b>Claylton dos Santos</b></sub></a> <a href="https://github.com/claylton" title="Claylton">😎</a>
 
-
-Feito com ❤️ por Claylton Santos 👋🏽 Entre em contato!
-
 [![Instagram Badge](https://img.shields.io/badge/Clayltonsp-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/clayltonsp/) 
 [![Linkedin Badge](https://img.shields.io/badge/-Claylton-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/claylton-dos-santos-97816a150/)](https://www.linkedin.com/in/claylton-dos-santos-97816a150/) 
 [![Hotmail Badge](https://img.shields.io/badge/-clayltonsp@hotmail.com-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&logoColor=white&link=mailto:clayltonsp@hotmail.com)](mailto:clayltonsp@hotmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Claylton Santos 👋🏽 [Entre em contato!](https://www.linkedin.com/in/claylton-dos-santos-97816a150/)
