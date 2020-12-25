@@ -22,7 +22,7 @@
 <p align="center">
  <a href="#-sobre-a-aplicação">Sobre a aplicação</a> •
  <a href="#-funcionalidades">Funcionalidades</a> • 
- <a href="#-demonstracao-da-aplicação">Demonstração da aplicação</a> • 
+ <a href="#-demonstração-da-aplicação">Demonstração da aplicação</a> • 
  <a href="#-como-executar-a-aplicação">Como executar a aplicação</a> • 
  <a href="#-tecnologias">Tecnologias</a> •
  <a href="#-autor">Autor</a> •
