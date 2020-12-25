@@ -14,3 +14,17 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/claylton/to_do)
 
 </div>
+
+<h4 align="center"> 
+	🚧  To do ♻️ Concluído 🚀 🚧
+</h4>
+
+<p align="center">
+ <a href="#sobre">💻 Sobre o projeto</a> •
+ <a href="#funcionalidades">⚙️ Funcionalidades</a> • 
+ <a href="#tecnologias">📱 Demonstração da aplicação</a> • 
+ <a href="#executar">🚀 Como executar a aplicação</a> • 
+ <a href="#tecnologias">🛠 Tecnologias</a> •
+ <a href="#autor">🦸 Autor</a> •
+ <a href="#licenca">📝 Licença</a>
+</p>
