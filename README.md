@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-  📝 Lista de tarefas básica usando o Flutter!!
+  📋 Lista de tarefas básica usando o Flutter!!
 </h3>
 
 <div align="center">
@@ -16,7 +16,7 @@
 </div>
 
 <h4 align="center"> 
-	🚧  To do ♻️ Concluído 🚀 🚧
+	🚧  To do 📋 Concluído 🚀 🚧
 </h4>
 
 <p align="center">
@@ -31,4 +31,4 @@
 
 ## 💻 Sobre a aplicação
 
-📝 To do é uma lista de tarefas com funcionalidades básicas feita em Flutter 
+📋 To do é uma lista de tarefas com funcionalidades básicas feita em Flutter 😎
