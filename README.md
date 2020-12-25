@@ -21,8 +21,8 @@
 
 <p align="center">
  <a href="#sobre">Sobre a aplicação</a> •
- <a href="#funcionalidades">⚙️ Funcionalidades</a> • 
- <a href="#tecnologias">📱 Demonstração da aplicação</a> • 
+ <a href="#funcionalidades">Funcionalidades</a> • 
+ <a href="#tecnologias">Demonstração da aplicação</a> • 
  <a href="#executar">🚀 Como executar a aplicação</a> • 
  <a href="#tecnologias">🛠 Tecnologias</a> •
  <a href="#autor">🦸 Autor</a> •
@@ -30,5 +30,16 @@
 </p>
 
 ## 💻 Sobre a aplicação
-
 📋 To do é uma lista de tarefas com funcionalidades básicas feita em Flutter 😎
+
+## ⚙️ Funcionalidades
+- [x] Cadastro de tarefas
+- [x] Excluir tarefas
+- [x] Marcar tarefas como concluida
+
+## 📱 Demonstração da aplicação
+<p align="center">
+  <img alt="Demo on Netlify" src="https://github.com/claylton/to_do/blob/master/readme-elements/Adicionar.gif" height="500" width="250">
+  <img alt="Demo on Netlify" src="https://github.com/claylton/to_do/blob/master/readme-elements/Concluir.gif" height="500" width="250">
+  <img alt="Demo on Netlify" src="https://github.com/claylton/to_do/blob/master/readme-elements/Remover.gif" height="500" width="250">
+</p>
