@@ -20,10 +20,10 @@
 </h4>
 
 <p align="center">
- <a href="#-sobre">Sobre a aplicação</a> •
+ <a href="#-sobre-a-aplicacao">Sobre a aplicação</a> •
  <a href="#-funcionalidades">Funcionalidades</a> • 
- <a href="#-tecnologias">Demonstração da aplicação</a> • 
- <a href="#-executar">Como executar a aplicação</a> • 
+ <a href="#-demonstracao-da-aplicacao">Demonstração da aplicação</a> • 
+ <a href="#-como-executar-a-aplicacao">Como executar a aplicação</a> • 
  <a href="#-tecnologias">Tecnologias</a> •
  <a href="#-autor">Autor</a> •
  <a href="#-licenca">Licença</a>
