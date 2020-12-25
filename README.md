@@ -84,5 +84,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Feito com ❤️ por Claylton Santos 👋🏽 Entre em contato!
 
 [![Instagram Badge](https://img.shields.io/badge/Clayltonsp-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/clayltonsp/) 
-[![Linkedin Badge](https://img.shields.io/badge/-Claylton-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/claylton-dos-santos-97816a150/)](https://www.linkedin.com/in/tgmarinho/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Claylton-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/claylton-dos-santos-97816a150/)](https://www.linkedin.com/in/claylton-dos-santos-97816a150/) 
 [![Hotmail Badge](https://img.shields.io/badge/-clayltonsp@hotmail.com-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&logoColor=white&link=mailto:clayltonsp@hotmail.com)](mailto:clayltonsp@hotmail.com)
