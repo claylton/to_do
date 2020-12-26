@@ -64,6 +64,8 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 -	```flutter packages get``` -> para obter todas as dependências necessárias
 -	```flutter run``` -> para rodar a aplicação
 
+---
+
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
