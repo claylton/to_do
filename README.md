@@ -29,12 +29,13 @@
  <a href="#-licença">Licença</a>
 </p>
 
+
 ## 💻 Sobre a aplicação
 📋 To do é uma lista de tarefas com funcionalidades básicas feita em Flutter 😎
 
 ---
 
-## ⚙️ Funcionalidades
+## ⛭ Funcionalidades
 - [x] Cadastro de tarefas
 - [x] Excluir tarefas
 - [x] Marcar tarefas como concluida
@@ -50,7 +51,7 @@
 
 ---
 
-## 🚀 Como executar a aplicação
+## 😎 Como executar a aplicação
 
 ### ⚠️ Importante!
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
